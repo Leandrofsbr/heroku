@@ -20,8 +20,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>Material Design Lite</title>
+    <meta name="viewport" content="width=device-width, user-scalable=false">
+    <title>AppNodeJS</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -49,28 +49,24 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.deep_purple-pink.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
+
+    .background-custom {
+      background-image: url('banner.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+    .mdl-color--primary-dark {
+      background: none !important;
+    }
+    .mdl-layout__tab-bar {
+      background: none !important;
     }
     </style>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-        <div class="mdl-layout--header mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout--header mdl-layout__header-row">
-          <h3>NodeApp</h3>
-        </div>
-        <div class="mdl-layout--header mdl-layout__header-row">
-        </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+      <header class="background-custom mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
           <a href="#features" class="mdl-layout__tab">Features</a>
           <a href="#features" class="mdl-layout__tab">Details</a>
@@ -81,6 +77,14 @@
             <span class="visuallyhidden">Add</span>
           </button>
         </div>
+        <div class="mdl-layout--header mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--header mdl-layout__header-row">
+          <h3>AppNodeJS</h3>
+        </div>
+        <div class="mdl-layout--header mdl-layout__header-row">
+        </div>
+
       </header>
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
